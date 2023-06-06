@@ -42,7 +42,7 @@
                     <td>{{ w.brand }}</td>
                     <td>{{ w.Height }}</td>
                     <td>{{ w.Width }}</td>
-                    <td><button type="btn" class="btn btn-danger" v-on:click="DeleteWebcam()" > Delete</button></td>
+                    <td><button type="btn" class="btn btn-danger" v-on:click="DeleteWebcam(w.id)" > Delete</button></td>
                 </tr>
             </tbody>
         </table>
