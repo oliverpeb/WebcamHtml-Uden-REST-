@@ -34,16 +34,12 @@ Vue.createApp({
             this.Width = 0
         },
 
-        async DeleteWebcam(id){
-            var index = this.Webcams.find(x=>x.id==id)
-            this.Webcams.splice(index, 1)
-            
-
-               
-            },
-            
-        
-
+        async DeleteWebcam(id) {
+            var index = this.Webcams.findIndex(x => x.id === id);
+            this.Webcams.splice(index, 1);
+          }
+          
+          
             
     }
 
